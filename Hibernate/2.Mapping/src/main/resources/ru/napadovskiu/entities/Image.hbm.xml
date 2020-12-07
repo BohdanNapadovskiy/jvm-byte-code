@@ -1,0 +1,12 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="ru.napadovskiu.entities.Images" table="images">
+    <id name="imageId" column="image_id">
+       <generator class="identity"/>
+    </id>
+        <property name="imagePath" column="path"/>
+    </class>
+
+
+
+</hibernate-mapping>
+

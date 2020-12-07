@@ -1,0 +1,12 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="ru.napadovskiu.entities.User" table="users">
+        <id name="userId" column="user_id">
+            <generator class="identity"/>
+        </id>
+        <property name="userName" column="user_name"/>
+        <property name="userPassword" column="user_password"/>
+
+    </class>
+
+</hibernate-mapping>
+

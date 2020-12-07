@@ -1,0 +1,28 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="ru.napadovskiu.entities.Item" table="items">
+    <id name="itemId" column="item_id">
+       <generator class="identity"/>
+    </id>
+        <property name="description" column="item_name"/>
+        <property name="date" column="date"/>
+        <property name="closed" column="item_closed"/>
+
+        <many-to-one name="car"
+                     column="car_id"
+                     cascade="all"
+                     class="ru.napadovskiu.entities.Car"
+                     fetch="join" lazy="false"/>
+
+
+        <many-to-one name="user"
+                     column="user_id"
+                     cascade="all"
+                     class="ru.napadovskiu.entities.User"
+                     fetch="join" lazy="false"/>
+
+    </class>
+
+
+
+</hibernate-mapping>
+

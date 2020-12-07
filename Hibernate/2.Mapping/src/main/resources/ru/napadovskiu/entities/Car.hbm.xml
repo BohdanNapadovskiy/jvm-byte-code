@@ -1,0 +1,30 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="ru.napadovskiu.entities.Car" table="car">
+    <id name="carId" column="car_id">
+       <generator class="identity"/>
+    </id>
+        <property name="carName" column="car_name"/>
+
+        <many-to-one name="engine"
+                     column="eng_id"
+                     class="ru.napadovskiu.entities.Engine" lazy="false"/>
+
+        <many-to-one name="gearBox"
+                     column="gear_id"
+                     class="ru.napadovskiu.entities.GearBox" lazy="false"/>
+
+        <many-to-one name="transmission"
+                     column="tr_id"
+                     class="ru.napadovskiu.entities.Transmission" lazy="false"/>
+
+        <many-to-one name="images"
+                     column="image_id"
+                     class="ru.napadovskiu.entities.Images" lazy="false"/>
+
+
+    </class>
+
+
+
+</hibernate-mapping>
+

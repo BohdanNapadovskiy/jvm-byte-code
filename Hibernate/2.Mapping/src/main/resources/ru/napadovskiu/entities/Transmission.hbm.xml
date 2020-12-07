@@ -1,0 +1,10 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="ru.napadovskiu.entities.Transmission" table="transmission">
+    <id name="transId" column="tr_id">
+       <generator class="identity"/>
+    </id>
+        <property name="transName" column="tr_name"/>
+    </class>
+
+</hibernate-mapping>
+

@@ -1,0 +1,1 @@
+﻿CREATE DATABASE java_byte_code

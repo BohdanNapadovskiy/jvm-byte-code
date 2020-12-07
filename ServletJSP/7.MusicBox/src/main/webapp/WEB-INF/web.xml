@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>ru.napadovskiu.filters.AuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>AuthController</servlet-name>
+        <servlet-class>ru.napadovskiu.servlets.AuthController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthController</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>ru.napadovskiu.servlets.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <servlet-class>ru.napadovskiu.servlets.CreateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditUserServlets</servlet-name>
+        <servlet-class>ru.napadovskiu.servlets.EditUserServlets</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditUserServlets</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MusicController</servlet-name>
+        <servlet-class>ru.napadovskiu.servlets.MusicJson</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MusicController</servlet-name>
+        <url-pattern>/musicJson</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserController</servlet-name>
+        <servlet-class>ru.napadovskiu.servlets.UserJson</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserController</servlet-name>
+        <url-pattern>/userJson</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RoleJson</servlet-name>
+        <servlet-class>ru.napadovskiu.servlets.RoleJson</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoleJson</servlet-name>
+        <url-pattern>/roleJson</url-pattern>
+    </servlet-mapping>
+
+</web-app>

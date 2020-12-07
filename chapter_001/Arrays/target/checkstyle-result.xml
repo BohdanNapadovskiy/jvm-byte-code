@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="C:\projects\jvm-byte-code\chapter_001\Arrays\src\main\java\ru\napadovskiuB\BubbleSort.java">
+</file>
+<file name="C:\projects\jvm-byte-code\chapter_001\Arrays\src\main\java\ru\napadovskiuB\package-info.java">
+</file>
+<file name="C:\projects\jvm-byte-code\chapter_001\Arrays\src\main\java\ru\napadovskiuB\RemoveDuplicate.java">
+</file>
+<file name="C:\projects\jvm-byte-code\chapter_001\Arrays\src\main\java\ru\napadovskiuB\RotateMatrix.java">
+</file>
+<file name="C:\projects\jvm-byte-code\chapter_001\Arrays\src\test\java\ru\napadovskiuB\BubbleSortTest.java">
+</file>
+<file name="C:\projects\jvm-byte-code\chapter_001\Arrays\src\test\java\ru\napadovskiuB\package-info.java">
+</file>
+<file name="C:\projects\jvm-byte-code\chapter_001\Arrays\src\test\java\ru\napadovskiuB\RemoveDuplicateTest.java">
+</file>
+<file name="C:\projects\jvm-byte-code\chapter_001\Arrays\src\test\java\ru\napadovskiuB\RotateMatrixTest.java">
+</file>
+</checkstyle>

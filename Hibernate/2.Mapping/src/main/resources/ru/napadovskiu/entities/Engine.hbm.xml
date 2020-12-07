@@ -1,0 +1,10 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="ru.napadovskiu.entities.Engine" table="engine">
+    <id name="engineId" column="eng_id">
+       <generator class="identity"/>
+    </id>
+        <property name="engineName" column="eng_name"/>
+    </class>
+
+</hibernate-mapping>
+

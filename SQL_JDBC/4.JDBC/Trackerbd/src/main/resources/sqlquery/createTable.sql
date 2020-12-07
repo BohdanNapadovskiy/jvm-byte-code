@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS table_items(item_id  VARCHAR(50) PRIMARY KEY, item_name VARCHAR(100),item_date timestamp,item_desc VARCHAR(100));
+CREATE TABLE IF NOT EXISTS table_comments (comments_id SERIAL PRIMARY KEY, comments_description varchar(200), item_id VARCHAR(50) references table_items(item_id) NOT NULL);

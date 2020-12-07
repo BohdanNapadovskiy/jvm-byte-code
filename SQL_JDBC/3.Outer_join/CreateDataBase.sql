@@ -1,0 +1,1 @@
+﻿CREATE DATABASE car_catalog

@@ -1,0 +1,10 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="ru.napadovskiu.entities.GearBox" table="gearbox">
+    <id name="gearBoxId" column="gear_id">
+       <generator class="identity"/>
+    </id>
+        <property name="gearBoxName" column="gear_name"/>
+    </class>
+
+</hibernate-mapping>
+
